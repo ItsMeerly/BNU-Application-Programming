@@ -1,11 +1,11 @@
 # C# Console Applications App01 to App05
 | Author | Details |
 | ---- | ---- |
-**Name**: | Student Name  |
-**Student ID**: | 12345678 |
-**Course:** | Computing |
+**Name**: | Nathaniel Meer  |
+**Student ID**: | 22139079 |
+**Course:** | Cyber Security w/ Integrated Masters |
 **Module**: | CO453     |
-**Started**: | January 2021 |    
+**Started**: | January 2022 |    
 
 1. App01: Distance Converter
 2. App02: BMI Calculator
