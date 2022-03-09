@@ -40,17 +40,21 @@ namespace ConsoleAppProject.App01
         public const string metres = "METRES";
         public const string kilometers = "KILOMETERS";
 
+        /// <summary>
+        /// Variables which control the input and output of the conversion
+        /// </summary>
         private double startDistance;
         private double endDistance;
 
+        /// <summary>
+        /// Variables which control the units being converted
+        /// </summary>
         private string startUnit;
         private string endUnit;
 
         /// <summary>
-        /// Run Method starts the program and ensures that each method is ran
-        /// in the correct order to allow for the unit conversion
+        /// "DistanceConversion" method starts the program and spits out necessary UI text
         /// </summary>
-
         public void DistanceConversion()
         {
             startUnit = SelectUnit("Please choose between 1-6 > ");
@@ -63,6 +67,9 @@ namespace ConsoleAppProject.App01
             OutputDistance();
         }
 
+        /// <summary>
+        /// This method contains the Unit Conversion formulas
+        /// </summary>
         private void CalculateDistance()
         {
             /// Miles to Feet | Feet to Miles
@@ -226,6 +233,10 @@ namespace ConsoleAppProject.App01
             }
         }
 
+
+        /// <summary>
+        /// This prompts the user with the unit selection and executes the choice chosen by the user
+        /// </summary>
         private string SelectUnit(string prompt)
         {
             string choice = DisplaySelection(prompt);
@@ -272,9 +283,13 @@ namespace ConsoleAppProject.App01
 
         }
 
+        /// <summary>
+        /// This displays the options of units you can choose for conversion
+        /// </summary>
+
         private static string DisplaySelection(string prompt)
         {
-            Console.WriteLine("\nPlease select your starting unit: \n");
+            Console.WriteLine("\nPlease select a unit of distance: \n");
             Console.WriteLine($"1. {miles}");
             Console.WriteLine($"2. {feet}");
             Console.WriteLine($"3. {yards}");
@@ -287,7 +302,9 @@ namespace ConsoleAppProject.App01
             return choice;
         }
 
-
+        /// <summary>
+        /// This accepts an input and converts it to Double in order to be easily used within the program
+        /// </summary>
         private double InputDistance(string prompt)
         {
             Console.Write(prompt);
@@ -295,7 +312,9 @@ namespace ConsoleAppProject.App01
             return Convert.ToDouble(value);
         }
 
-
+        /// <summary>
+        /// This outputs the conversion
+        /// </summary>
         private void OutputDistance()
         {
             Console.WriteLine($"{startDistance} {startUnit} is {endDistance} {endUnit}! ");
@@ -305,7 +324,7 @@ namespace ConsoleAppProject.App01
 
         /// <summary>
         /// Displays a header describing the function of the program
-        /// and the author of the code
+        /// and the author of the code, as well as outputting the conversion parameters
         /// </summary>
         public void OutputHeading(string prompt)
         {
