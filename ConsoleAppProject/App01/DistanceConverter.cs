@@ -33,18 +33,26 @@ namespace ConsoleAppProject.App01
             miles = Convert.ToDouble(value);
         }
         /// <summary>
-        /// 
+        /// Calculates the conversion of Miles to Feet
         /// </summary>
         private void CalculateFeet()
         {
-
+            feet = miles * 5280;
         }
         /// <summary>
-        /// 
+        /// Outputs the previously calculated conversion using concatonated strings
+        /// Checks for one or multiple miles in order to ensure grammatical accuracy
         /// </summary>
         private void OutputFeet()
         {
-
+            if (miles == 1)
+            {
+                Console.WriteLine(miles + " Mile is " + feet + " feet!");
+            }
+            else
+            {
+                Console.WriteLine(miles + " Miles is " + feet + " feet!");
+            }
         }
     }
 }
