@@ -7,7 +7,7 @@ namespace ConsoleAppProject.App01
     /// measured in miles to the equivalent distance measured in feet
     /// </summary>
     /// <author>
-    /// Nathaniel Meer | Version: 0.1
+    /// Nathaniel Meer | Version: 0.2
     /// </author>
     public class DistanceConverter
     {
