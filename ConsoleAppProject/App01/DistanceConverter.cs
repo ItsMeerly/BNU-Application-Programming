@@ -328,11 +328,6 @@ namespace ConsoleAppProject.App01
         /// </summary>
         public void OutputHeading(string prompt)
         {
-            Console.WriteLine("\n =================================================");
-            Console.WriteLine("                 Distance Converter               ");
-            Console.WriteLine("                    by Nate Meer                  ");
-            Console.WriteLine(" =================================================\n");
-
             Console.WriteLine(prompt);
             Console.WriteLine();
         }

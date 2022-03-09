@@ -20,9 +20,9 @@ namespace ConsoleAppProject
             Console.WriteLine();
             Console.WriteLine(" =================================================");
             Console.WriteLine("   BNU CO453 Applications Programming 2021-2022!  ");
-            Console.WriteLine("                 by Nathaniel Meer                ");
-            Console.WriteLine(" =================================================");
-            Console.WriteLine();
+            Console.WriteLine("                Distance Converter                ");
+            Console.WriteLine("                   by Nate Meer                   ");
+            Console.WriteLine(" =================================================\n");
 
             DistanceConverter converter = new DistanceConverter();
             converter.DistanceConversion();
